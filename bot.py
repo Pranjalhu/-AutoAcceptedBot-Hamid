@@ -89,10 +89,10 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" Add me to your Chat ", url="https://t.me/joinrequestapprovalbot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 Channel", url=""),
-                        InlineKeyboardButton("💬 Support", url="")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url=""),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="")
                     ]
                 ]
             )
@@ -100,7 +100,7 @@ async def chk(_, cb : CallbackQuery):
             await cb.message.edit("**ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇ [Admin Join Requests]({}) ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs.ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀs ᴘᴇʀᴍɪssɪᴏɴ.\n\n__ᴘᴏᴡᴇʀᴅ ʙʏ : @only_botz__**".format(cb.from_user.mention, "https://t.me/only_botz"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
-        await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
+        await cb.answer("🙅‍♂️ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴄʜᴀɴɴᴇʟ ᴊᴏɪɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ. 🙅‍♂️")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
