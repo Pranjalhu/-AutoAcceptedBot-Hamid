@@ -47,8 +47,8 @@ async def op(_, m :Message):
                     [
                         InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url=""),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/only_botz"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/only_botz")
                     ]
                 ]
             )
@@ -91,8 +91,8 @@ async def chk(_, cb : CallbackQuery):
                     [
                         InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url=""),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/only_botz"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/only_botz")
                     ]
                 ]
             )
