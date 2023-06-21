@@ -45,15 +45,15 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" Add me to your Chat ", url="https://t.me/joinrequestapprovalbot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 Channel", url=""),
-                        InlineKeyboardButton("💬 Support", url="")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url=""),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/cf7ff3f5a5844a565ae5c.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @only_botz__**".format(m.from_user.mention, "https://t.me/only_botz"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/cf7ff3f5a5844a565ae5c.jpg", caption="**ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇ [Admin Join Requests]({}) ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs.ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀs ᴘᴇʀᴍɪssɪᴏɴ.\n\n__ᴘᴏᴡᴇʀᴅ ʙʏ : @only_botz__**".format(m.from_user.mention, "https://t.me/only_botz"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
