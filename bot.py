@@ -47,8 +47,8 @@ async def op(_, m :Message):
                     [
                         InlineKeyboardButton(" Add me to your Chat ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/only_botz"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/cdbotzsupport")
+                        InlineKeyboardButton("🗯 Channel", url=""),
+                        InlineKeyboardButton("💬 Support", url="")
                     ]
                 ]
             )
@@ -91,8 +91,8 @@ async def chk(_, cb : CallbackQuery):
                     [
                         InlineKeyboardButton(" Add me to your Chat ", url="https://t.me/joinrequestapprovalbot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/only_botz"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/cdbotzsupport")
+                        InlineKeyboardButton("🗯 Channel", url=""),
+                        InlineKeyboardButton("💬 Support", url="")
                     ]
                 ]
             )
@@ -120,7 +120,7 @@ async def dbtool(_, m : Message):
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
 async def bcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("`⚡️ Processing...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
     success = 0
     failed = 0
     deactivated = 0
@@ -152,7 +152,7 @@ async def bcast(_, m : Message):
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
 async def fcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("`⚡️ Processing...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
     success = 0
     failed = 0
     deactivated = 0
