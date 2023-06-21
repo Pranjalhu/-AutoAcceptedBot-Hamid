@@ -120,7 +120,7 @@ async def dbtool(_, m : Message):
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
 async def bcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
+    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
     success = 0
     failed = 0
     deactivated = 0
@@ -152,7 +152,7 @@ async def bcast(_, m : Message):
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
 async def fcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
+    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
     success = 0
     failed = 0
     deactivated = 0
