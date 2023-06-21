@@ -45,10 +45,10 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/Auto_Accept_joinRequest_Bot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/only_botz"),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/only_botz")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/+83ps7tnnS1JlY2Q1"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/+OC3QPSHnB3g2ZjA1")
                     ]
                 ]
             )
@@ -71,7 +71,7 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💢 Join Channel 💢", url="https://t.me/only_botz"),
+                    InlineKeyboardButton("💢 Join Channel 💢", url="https://t.me/+83ps7tnnS1JlY2Q1"),
                 ],[
                     InlineKeyboardButton("🍀 Check Again 🍀", "chk")
                 ]
@@ -89,10 +89,10 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/joinrequestapprovalbot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/Auto_Accept_joinRequest_Bot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/only_botz"),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/only_botz")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/+83ps7tnnS1JlY2Q1"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/+OC3QPSHnB3g2ZjA1")
                     ]
                 ]
             )
