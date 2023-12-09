@@ -28,7 +28,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @only_botz__**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @srk_8556__**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -45,10 +45,10 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/Auto_Accept_joinRequest_Bot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="http://t.me/SrkApprovalBot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/CrezyBotz"),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/CrezyBotz")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/srk_8556"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/srk_8556")
                     ]
                 ]
             )
@@ -59,7 +59,7 @@ async def op(_, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/https://t.me/joinrequestapprovalbot?startgroup?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="http://t.me/SrkApprovalBot?startgroup?start=start")
                     ]
                 ]
             )
@@ -71,7 +71,7 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💢 Join Channel 💢", url="https://t.me/CrezyBotz"),
+                    InlineKeyboardButton("💢 Join Channel 💢", url="https://t.me/srk_8556"),
                 ],[
                     InlineKeyboardButton("🍀 Check Again 🍀", "chk")
                 ]
@@ -89,15 +89,15 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="https://t.me/Auto_Accept_joinRequest_Bot?startgroup")
+                        InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ", url="http://t.me/SrkApprovalBot?startgroup")
                     ],[
-                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/CrezyBotz"),
-                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/CrezyBotz")
+                        InlineKeyboardButton("🗯 ᴄʜᴀɴɴᴇʟ", url="https://t.me/srk_8556"),
+                        InlineKeyboardButton("💬 sᴜᴘᴘᴏʀᴛ", url="https://t.me/srk_8556")
                     ]
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇ ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs.ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀs ᴘᴇʀᴍɪssɪᴏɴ.\n\n__ᴘᴏᴡᴇʀᴅ ʙʏ : @only_botz__**".format(cb.from_user.mention, "https://t.me/only_botz"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**ʜᴇʟʟᴏ {}!\nɪ'ᴍ ᴀɴ ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇ ʙᴏᴛ.\nɪ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴜsᴇʀs ɪɴ ɢʀᴏᴜᴘs/ᴄʜᴀɴɴᴇʟs.ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴡɪᴛʜ ᴀᴅᴅ ᴍᴇᴍʙᴇʀs ᴘᴇʀᴍɪssɪᴏɴ.\n\n__ᴘᴏᴡᴇʀᴅ ʙʏ : @srk_8556__**".format(cb.from_user.mention, "https://t.me/srk_8556"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴛᴏ ᴄʜᴀɴɴᴇʟ ᴊᴏɪɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ. 🙅‍♂️")
@@ -120,7 +120,7 @@ async def dbtool(_, m : Message):
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
 async def bcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
+    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...`")
     success = 0
     failed = 0
     deactivated = 0
@@ -152,7 +152,7 @@ async def bcast(_, m : Message):
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
 async def fcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...ᴍᴀᴅᴇ ʙʏ @ᴄʀᴇᴢʏᴅᴇᴠᴇʟᴏᴘᴇʀs`")
+    lel = await m.reply_text("`⚡️ ᴘʀᴏᴄᴇssɪɴɢ...`")
     success = 0
     failed = 0
     deactivated = 0
