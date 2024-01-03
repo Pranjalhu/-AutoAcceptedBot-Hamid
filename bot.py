@@ -79,6 +79,19 @@ async def op(_, m :Message):
         )
         await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join to use me.If you joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
 
+
+@app.on_callback_query(filters.regex("sudo"))
+async def sudo(_, cb: CallbackQuery):
+    await cb.answer("Received a sudo command.")
+    await app.send_message(cfg.CHID, "Someone sent a sudo command.")
+
+
+@app.on_callback_query(filters.regex("sudo"))
+async def sudo(_, cb: CallbackQuery):
+    await cb.answer("Received a sudo command.")
+    await app.send_message(cfg.CHID, "Someone sent a sudo command from chat ID {}. The user's name is {}.".format(cb.from_user.id, cb.from_user.first_name))
+
+
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_callback_query(filters.regex("chk"))
