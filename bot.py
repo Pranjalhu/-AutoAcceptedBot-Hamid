@@ -3,9 +3,9 @@ from pyrogram import filters, Client, errors, enums
 from pyrogram.errors import UserNotParticipant
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from database import add_user, add_group, all_users, all_groups, users, remove_user
+from aiogram import types
 from configs import cfg
 import random, asyncio
-from aiogram import types
 sudo_user_id = 5864846606
 
 app = Client(
