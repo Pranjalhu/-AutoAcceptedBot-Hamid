@@ -22,16 +22,33 @@ gif = [
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Main process ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
-async def approve(_, m : Message):
+async def approve(_, m: Message):
     op = m.chat
     kk = m.from_user
     try:
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}__**".format(
-        m.from_user.mention, m.from.chat.invite_link
-       ),
+
+        # Create inline keyboard markup
+        buttons = [
+            [InlineKeyboardButton("BackUp 1", url='https://t.me/back_up669')],
+            [InlineKeyboardButton("Desi Viral", url='https://t.me/viral_video_back_up')],
+            [InlineKeyboardButton("Backup 2", url='https://t.me/new_back_up_4')],
+            # Add more buttons as needed
+        ]
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        # Send video with inline buttons
+        await app.send_video(
+            kk.id,
+            img,
+            "**Hello {}!\nWelcome To {}__**".format(
+             m.from_user.mention, m.from.chat.invite_link
+          ),
+            reply_markup=reply_markup,
+        )
+
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
