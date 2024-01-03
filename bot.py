@@ -44,10 +44,11 @@ async def approve(_, m: Message):
             kk.id,
             img,
             "**Hello {}!\nWelcome To {}__**".format(
-             m.from_user.mention, m.from.chat.invite_link
-          ),
-            reply_markup=reply_markup,
-        )
+        m.from_user.mention, f"[{m.chat.title}]({m.chat.username})"
+     ),
+      reply_markup=reply_markup,
+      parse_mode="Markdown",  # Specify Markdown parse mode to enable link formatting
+     )
 
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
