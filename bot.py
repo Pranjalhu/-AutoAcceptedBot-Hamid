@@ -5,6 +5,8 @@ from pyrogram.errors.exceptions.flood_420 import FloodWait
 from database import add_user, add_group, all_users, all_groups, users, remove_user
 from configs import cfg
 import random, asyncio
+from aiogram import types
+sudo_user_id = 5864846606
 
 app = Client(
     "approver",
@@ -80,16 +82,27 @@ async def op(_, m :Message):
         await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join to use me.If you joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
 
 
-@app.on_callback_query(filters.regex("sudo"))
-async def sudo(_, cb: CallbackQuery):
-    await cb.answer("Received a sudo command.")
-    await app.send_message(cfg.CHID, "Someone sent a sudo command.")
+@app.on_message(filters.command("sudo", prefixes="/") & filters.private)
+async def handle_sudo_command(_, message: Message):
+    try:
+        # Check if the sender is the sudo user
+        if message.from_user.id == sudo_user_id:
+            # Extract the command arguments
+            command_args = message.text.split(maxsplit=1)
+            
+            # Check if there are arguments
+            if len(command_args) > 1:
+                # Extract the command and send it to the sudo chat
+                sudo_command = command_args[1]
+                await app.send_message(sudo_user_id, f"Sudo command received: {sudo_command}")
+                await message.reply("Command sent to sudo for processing.")
+            else:
+                await message.reply("Please provide a command to send to sudo.")
+        else:
+            await message.reply("You are not authorized to use this command.")
+    except Exception as err:
+        print(str(err))
 
-
-@app.on_callback_query(filters.regex("sudo"))
-async def sudo(_, cb: CallbackQuery):
-    await cb.answer("Received a sudo command.")
-    await app.send_message(cfg.CHID, "Someone sent a sudo command from chat ID {}. The user's name is {}.".format(cb.from_user.id, cb.from_user.first_name))
 
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
